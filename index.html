@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="icon" type="image/png" href="Assets/Images/favicon.png">
+    <link href="Assets/CSS/style.css" rel="stylesheet" />
+    <script src="Assets/JS/script.js" defer ></script>
+    
+    <!--SEO-->
+    <meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML, CSS, JavaScript">
+  	<meta name="author" content="Júlio Cezar">
+
+    <!--SMO-->
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+</head>
+<body>
+
+    <img class="logo" src="Assets/Images/logo.png" alt="Gerador de Senha logo" />
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> Caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15" />
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+    </main>
+
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title"> Sua senha gerada foi:</span>
+        <span id="password" class="password">1s4g65d4v23ds1vc</span>
+        <span class="tooltip">Clique na senha para copiar.</span>
+    </div>
+    
+</body>
+</html>
