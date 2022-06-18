@@ -1,5 +1,5 @@
 <h1 align="center">
-  Buscador de CEP
+  Gerador de Senha
 </h1>
 
 <p align="center">
@@ -31,11 +31,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - JavaScript
-- ReactJS
 
 ## 🚧 Projeto
 
-Construir um Buscador de CEP, via API.
+Construir um Gerador de Senha aleatório.
 
 
 ## :memo: Licença
