@@ -1,3 +1,5 @@
+/* Creating a slider and a button. The slider is used to set the length of the password. The button is
+used to generate the password. */
 let sliderElement = document.querySelector("#slider");
 let buttonElement = document.querySelector("#button");
 
@@ -15,6 +17,9 @@ sliderElement.oninput = function(){
     sizePassword.innerHTML = this.value;
 }
 
+/**
+ * It generates a random password based on the length of the slider.
+ */
 function generatePassword(){
     
     let pass = "";
@@ -28,6 +33,9 @@ function generatePassword(){
 
 }
 
+/**
+ * When the button is clicked, the alert will pop up, and the password will be copied to the clipboard.
+ */
 function copyPassword(){
     alert("Senha coopiada com sucesso!");
     navigator.clipboard.writeText(novaSenha);
